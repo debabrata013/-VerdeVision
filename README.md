@@ -1,6 +1,3 @@
-Bilkul bhai! Let me describe your **VerdeVision** project in English clearly, in a way that you can use for your README, presentation, or documentation.
-
----
 
 ## 🌿 **VerdeVision - Tree Leaf Disease Detection App**
 
@@ -69,6 +66,3 @@ Bilkul bhai! Let me describe your **VerdeVision** project in English clearly, in
 - Multi-language support
 - Real-time camera capture (mobile devices)
 
----
-
-Let me know if you want this in a more professional tone or as a proper README template.
