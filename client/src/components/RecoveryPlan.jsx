@@ -23,7 +23,8 @@
 // export default RecoveryPlan;
 
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import axios from '../axios'; // ya './axios' depending on location
+
 import { Loader, CheckCircle, AlertTriangle, SprayCanIcon } from 'lucide-react';
 
 const RecoveryPlan = ({ diseaseName }) => {
@@ -36,7 +37,7 @@ const RecoveryPlan = ({ diseaseName }) => {
       setLoading(true);
       setError(null);
       
-      axios.post('/api/recovery-advice', { diseaseName })
+      axios.post('/recovery-advice', { diseaseName })
         .then((res) => {
           setPlan(res.data);
           setLoading(false);

@@ -35,7 +35,8 @@
 
 // export default LeafUpload;
 import React, { useState } from 'react';
-import axios from 'axios';
+import axios from '../axios'; // ya './axios' depending on location
+
 import { Upload, Loader } from 'lucide-react';
 
 const LeafUpload = ({ setDiseaseName }) => {
@@ -52,7 +53,7 @@ const LeafUpload = ({ setDiseaseName }) => {
     
     setLoading(true);
     try {
-      const response = await axios.post('/api/upload', formData, {
+      const response = await axios.post('/detect', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setDiseaseName(response.data.diseaseName);
